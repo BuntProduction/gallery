@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+import React from 'react';
+import AnimatedRectangles from './components/AnimatedRectangles';
+import Header from './components/Header';
+import ScrollingText from './components/ScrollingText';
+import Gallery from './components/Gallery';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <AnimatedRectangles />
+        <Header />
+        <section>
+          <ScrollingText />
+        </section>
+        <section id="gallery">
+          <Gallery />
+        </section>
+        <Footer />
     </div>
   );
 }

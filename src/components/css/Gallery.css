@@ -1,0 +1,114 @@
+.galleryWrapper {
+  position: relative;
+  width: 100%;
+  height: 300vh;
+  z-index: 1;
+  background-color: #e2dfda;
+  margin-top: 100px;
+}
+
+.gallery {
+  display: flex;
+  height: 100vh;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.portraitContainer {
+  flex: 1;
+  height: 100vh;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.portrait {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.titleWrapper {
+  position: absolute;
+  left: -200%;
+  top: 0;
+  padding: 50px;
+  z-index: 4;
+  text-align: left;
+}
+
+.titleWrapper h1 {
+  margin: 0;
+  font-size: 7em;
+}
+
+.titleWrapper ul {
+  margin-top: 80px;
+  list-style: none;
+  padding: 0;
+  line-height: 1.8em;
+}
+
+.titleWrapper ul li {
+  font-size: 1em;
+}
+
+@media (max-width: 768px) {
+
+  .galleryWrapper{
+    margin-top: 0px;
+    height: 271vh;
+  }
+  .gallery {
+    flex-direction: column;
+    
+  }
+
+  .portraitContainer {
+    width: 100%;
+    height: auto;
+  }
+
+  .portrait {
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+    margin-bottom: -5px;
+  }
+
+  .title {
+    font-size: 1.5em;
+  }
+
+  .description {
+    font-size: 0.9em;
+  }
+
+  .learnMore {
+    font-size: 0.9em;
+  }
+
+  .titleWrapper {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    background-color: #e2dfda;
+    left: 0;
+    margin-top: 20px;
+  }
+
+  .titleWrapper h1 {
+    font-size: 3em;
+  }
+
+  .titleWrapper ul li {
+    font-size: 1em;
+  }
+}

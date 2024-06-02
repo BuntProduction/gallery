@@ -1,0 +1,91 @@
+.scrollContainer {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.bigText {
+  display: inline-block;
+  overflow: hidden;
+  height: 100px;
+  color: rgb(15, 15, 15);
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+.bigText h2 {
+  padding: 0px 10px;
+  display: inline-block;
+  background-color: #e2dfda;
+}
+
+
+.animatedLetter {
+  font-size: 2.8em;
+  font-weight: 600;
+  display: inline-block;
+  transform: translateY(100%);
+  animation: slideUp 1s forwards;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+.image {
+  border: 2px solid black;
+  padding: 0;
+  display: block;
+  margin: auto;
+  width: 70%;
+  transition: opacity 0.5s ease;
+}
+
+.textContainer {
+  position: relative;
+  top: 100px;
+  width: 80%;
+  justify-content: center;
+  text-align: center;
+  z-index: 1;
+  margin: 0 auto;
+}
+
+.text {
+  font-size: 4.2em;
+  color: #e2dfda;
+  position: relative;
+  z-index: 1; 
+  margin-bottom: 200px;
+}
+
+@media (max-width: 768px){
+  .text {
+    font-size: 2em;
+    line-height: 1.3em;
+  }
+
+  .bigText {
+    height: 50px;
+  }
+  .animatedLetter {
+    font-size: 1em;
+  }
+  .image{
+    margin-top: 80px;
+    margin-bottom: -50px;
+    width: 100%;
+  }
+  .textContainer{
+    text-align: left;
+    width: 90%;
+  }
+}
